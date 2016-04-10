@@ -1,0 +1,25 @@
+C:\Travail\Réalité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.csprojResolveAssemblyReference.cache
+C:\Travail\Réalité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\bin\Debug\BibDeClasses.dll
+C:\Travail\Réalité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\bin\Debug\BibDeClasses.pdb
+C:\Travail\Réalité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.dll
+C:\Travail\Réalité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.pdb
+C:\Travail\Réalité virtuelleVieux\ProjetRealiteVirtuelle\BibDeClasses\bin\Debug\BibDeClasses.dll
+C:\Travail\Réalité virtuelleVieux\ProjetRealiteVirtuelle\BibDeClasses\bin\Debug\BibDeClasses.pdb
+C:\Travail\Réalité virtuelleVieux\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.csprojResolveAssemblyReference.cache
+C:\Travail\Réalité virtuelleVieux\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.dll
+C:\Travail\Réalité virtuelleVieux\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.pdb
+C:\Travail\ProjetRealiteVirtuelle\BibDeClasses\bin\Debug\BibDeClasses.dll
+C:\Travail\ProjetRealiteVirtuelle\BibDeClasses\bin\Debug\BibDeClasses.pdb
+C:\Travail\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.csprojResolveAssemblyReference.cache
+C:\Travail\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.dll
+C:\Travail\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.pdb
+D:\Realité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\bin\Debug\BibDeClasses.dll
+D:\Realité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.csprojResolveAssemblyReference.cache
+D:\Realité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.dll
+D:\Realité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\obj\Debug\BibDeClasses.pdb
+D:\Realité virtuelle\ProjetRealiteVirtuelle\BibDeClasses\bin\Debug\BibDeClasses.pdb
+C:\ProjetRealiteVirtuelle1703\BibDeClasses\bin\Debug\BibDeClasses.dll
+C:\ProjetRealiteVirtuelle1703\BibDeClasses\bin\Debug\BibDeClasses.pdb
+C:\ProjetRealiteVirtuelle1703\BibDeClasses\obj\Debug\BibDeClasses.csprojResolveAssemblyReference.cache
+C:\ProjetRealiteVirtuelle1703\BibDeClasses\obj\Debug\BibDeClasses.dll
+C:\ProjetRealiteVirtuelle1703\BibDeClasses\obj\Debug\BibDeClasses.pdb

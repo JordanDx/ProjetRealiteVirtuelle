@@ -1,0 +1,99 @@
+﻿<Window xmlns:prv="clr-namespace:ProjetRealiteVirtuelle"  x:Class="ProjetRealiteVirtuelle.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MasterOfElements" Height="600" Width="800" Loaded="WindowLoaded" Closing="WindowClosing">
+
+
+    <Window.Background >
+        <ImageBrush Stretch="Fill" ImageSource="Images/background.png"/>
+    </Window.Background>
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+        <StatusBar Grid.Row="3"  HorizontalAlignment="Center" Padding="0 0 0 0" Margin="304,10,326,10">
+            <StatusBarItem/>
+            <TextBlock x:Name="statusBarTextSquelette1" Margin="0 0 0 0"><Run Text="Détection squelette 1"/></TextBlock>
+        </StatusBar>
+
+
+        <Canvas Grid.Row="0">
+            <!-- Coeurs joueur 1-->
+            <Image Name="coeur1j1" Source="Images/Heart.png" Width="45" Canvas.Left="20" Canvas.Top="10" Visibility="Visible" Opacity="1"/>
+            <Image Name="coeur2j1" Source="Images/Heart.png" Width="45" Canvas.Left="75" Canvas.Top="10" Visibility="Visible" Opacity="1"/>
+            <Image Name="coeur3j1" Source="Images/Heart.png" Width="45" Canvas.Left="125" Canvas.Top="10" Visibility="Visible" Opacity="1"/>
+
+            <!-- Coeurs joueur 2-->
+            <Image Name="coeur1j2" Source="Images/Heart.png" Width="45" Canvas.Right="125" Canvas.Top="10" Visibility="Visible" Opacity="1"/>
+            <Image Name="coeur2j2" Source="Images/Heart.png" Width="45" Canvas.Right="75" Canvas.Top="10" Visibility="Visible" Opacity="1"/>
+            <Image Name="coeur3j2" Source="Images/Heart.png" Width="45" Canvas.Right="20" Canvas.Top="10" Visibility="Visible" Opacity="1"/>
+        </Canvas>
+
+        
+        <Canvas Grid.Row="1">
+            <!-- Éléments prêts ou non joueur 1-->
+            <Image Name="elementFeu" Source="Images/Boules/fireball.png" Width="45" Canvas.Left="20" Canvas.Top="10" Visibility="Visible" Opacity="0.4"/>
+            <Image Name="elementEau" Source="Images/Boules/waterball.png" Width="70" Canvas.Left="60" Height="70" Visibility="Visible" Opacity="0.4"/>
+            <Image Name="elementTerre" Source="Images/Boules/grassball.png" Width="45" Canvas.Left="125" Canvas.Top="10" Visibility="Visible" Opacity="0.4"/>
+
+            <!-- Éléments prêts ou non joueur 2-->
+            <Image Name="elementFeu2" Source="Images/Boules/fireball.png" Width="45" Canvas.Right="125" Canvas.Top="10" Visibility="Visible" Opacity="0.4"/>
+            <Image Name="elementEau2" Source="Images/Boules/waterball.png" Width="70" Canvas.Right="60" Height="70" Visibility="Visible" Opacity="0.4"/>
+            <Image Name="elementTerre2" Source="Images/Boules/grassball.png" Width="45" Canvas.Right="20" Canvas.Top="10" Visibility="Visible" Opacity="0.4"/>
+        </Canvas>
+
+
+        <Canvas Grid.Row="2" Name="canvasJeu">
+
+            <!-- Textes de test-->
+
+            <!-- Boucliers joueur 1-->
+            <Image Name="bouclierFeu" Source="Images/Boucliers/fireshield.png" Width="50" Canvas.Left="140" Canvas.Bottom="120"  Visibility="Hidden"/>
+            <Image Name="bouclierEau" Source="Images/Boucliers/watershield.png" Width="50" Canvas.Left="140" Canvas.Bottom="120"  Visibility="Hidden"/>
+            <Image Name="bouclierTerre" Source="Images/Boucliers/groundshield.png" Width="50" Canvas.Left="140" Canvas.Bottom="120"  Visibility="Hidden"/>
+
+            <!-- Boucliers joueur 2-->
+            <Image Name="bouclierFeu2" Source="Images/Boucliers/fireshield.png" Width="50" Canvas.Right="140" Canvas.Bottom="120"  Visibility="Hidden"/>
+            <Image Name="bouclierEau2" Source="Images/Boucliers/watershield.png" Width="50" Canvas.Right="140" Canvas.Bottom="120"  Visibility="Hidden"/>
+            <Image Name="bouclierTerre2" Source="Images/Boucliers/groundshield.png" Width="50" Canvas.Right="140" Canvas.Bottom="120"  Visibility="Hidden"/>
+
+            
+            <!-- Mage 1-->
+            <Image Name="mageStatique" Width ="80" Source="Images/Mages/MageStatique.png" Canvas.Left="50" Canvas.Bottom="120" Visibility="Visible"/>
+            <Image Name="mageBrasLeves" Width ="80" Source="Images/Mages/MageBrasLeves.png" Canvas.Left="50" Canvas.Bottom="120" Visibility="Hidden"/>
+            <Image Name="mageBrasTendus" Width ="80" Source="Images/Mages/MageBrastendus.png" Canvas.Left="58" Canvas.Bottom="120" Visibility="Hidden"/>
+
+            <!-- Mage 2-->
+            <Image Name="mageStatique2" Width ="80" Source="Images/Mages/MageStatique2.png" Canvas.Right="50" Canvas.Bottom="120" Visibility="Visible"/>
+            <Image Name="mageBrasLeves2" Width ="80" Source="Images/Mages/MageBrasLeves2.png" Canvas.Right="50" Canvas.Bottom="120" Visibility="Hidden"/>
+            <Image Name="mageBrasTendus2" Width ="80" Source="Images/Mages/MageBrastendus2.png" Canvas.Right="58" Canvas.Bottom="120" Visibility="Hidden"/>
+
+        </Canvas>
+
+
+
+        <!-- BOUTONS DE TESTS -->
+        <Button Content="Feu" HorizontalAlignment="Left" Margin="10,20,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicElementFeuPret"/>
+        <Button Content="Eau" HorizontalAlignment="Left" Margin="10,50,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicElementEauPret"/>
+        <Button Content="Terre" HorizontalAlignment="Left" Margin="10,80,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicElementTerrePret"/>
+        <Button Content="Attaque" HorizontalAlignment="Left" Margin="90,20,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicAttaquer"/>
+        <Button Content="Defense" HorizontalAlignment="Left" Margin="90,50,0,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicDefendre"/>
+
+        <Button Content="Feu" HorizontalAlignment="Right" Margin="0,20,90,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicElementFeuPretJoueur2"/>
+        <Button Content="Eau" HorizontalAlignment="Right" Margin="0,50,90,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicElementEauPretJoueur2"/>
+        <Button Content="Terre" HorizontalAlignment="Right" Margin="0,80,90,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicElementTerrePretJoueur2"/>
+        <Button Content="Attaque" HorizontalAlignment="Right" Margin="0,20,10,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicAttaquerJoueur2"/>
+        <Button Content="Defense" HorizontalAlignment="Right" Margin="0,50,10,0" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="ClicDefendreJoueur2"/>
+
+
+    </Grid>
+
+
+
+</Window>
